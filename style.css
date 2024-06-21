@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet');
+
+:root {
+    --cor-primaria: #ff80b5;
+    --cor-background: #f7c9de;
+    --cor-texto: #a5a5a5;
+    --fonte-texto: "Fredoka", sans-serif;
+    --fonte-titulo: "Fredoka One", sans-serif;
+}
+
+body {
+    font-family: var(--fonte-texto);
+    text-align: justify;
+    background: var(--cor-background);
+    
+}
+
+header {
+    background: white;
+    margin: 8rem;
+    margin-bottom: 0;
+}
+
+.cabecalho__banner {
+    max-width: 100vh;
+}
+
+.menu {
+    background: var(--cor-primaria);
+    line-height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu__item {
+    display: inline;
+    padding: 2rem;
+    justify-content: space-around;
+}
+
+
+.menu_link {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/* menu em celular */
+
+@media(max-width: 600px) {
+    .menu {
+        background: var(--cor-primaria);
+        display: flex;
+    }
+
+    .menu_link {
+        color: aliceblue;
+        text-decoration: none;
+        font-size: 1.5rem;
+
+    }
+}
+
+.about {
+    background: white;
+    margin: 8rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 1rem;
+    display: flex;
+}
+
+h6 {
+    color: var(--cor-primaria);
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: var(--fonte-titulo);
+    text-align: center;
+}
+
+.about__texto-paragrafo{
+    font-size: 1.8rem;
+    padding: 1.5rem;
+    color: var(--cor-texto);
+    
+}
+
+.redes-sociais-imagens{
+    display: inline;
+    max-width:32px;
+    max-height:32px;
+    width: auto;
+    height: auto;
+    padding: 1rem;
+}
+
+.redes-sociais-icons{
+    text-align: center;
+}
+
+.rodape{
+    background: white;
+    margin: 8rem;
+    margin-top: 0;
+    color: var(--cor-texto);
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+
+}

@@ -14,17 +14,28 @@ body {
     font-family: var(--fonte-texto);
     text-align: justify;
     background: var(--cor-background);
-    
-}
 
+}
+.inner{
+    background: white;
+    width: 80%;
+    margin-left: 10%;
+}
 header {
     background: white;
     margin: 8rem;
     margin-bottom: 0;
 }
 
+.cor{
+    color: var(--cor-primaria);
+}
+
 .cabecalho__banner {
-    max-width: 100vh;
+    width: 70%;
+    margin-left:15%;
+    position: relative;
+    
 }
 
 .menu {
@@ -33,6 +44,9 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 98%;
+    margin-left: 1%;
+    
 }
 
 .menu__item {
@@ -47,6 +61,11 @@ header {
     text-decoration: none;
     font-size: 2rem;
     font-weight: 500;
+}
+
+
+.menu_link:hover{
+    color: #fcc6dd;
 }
 
 /* menu em celular */
@@ -82,33 +101,47 @@ h6 {
     text-align: center;
 }
 
-.about__texto-paragrafo{
-    font-size: 1.8rem;
+.about__texto-paragrafo {
+    flex-shrink:1;
+    font-size: 1.2rem;
     padding: 1.5rem;
     color: var(--cor-texto);
-    
+
 }
 
-.redes-sociais-imagens{
+.about__imagem{
+    display: block;
+    line-height: 0;
+    width: 420px;
+    height: auto;
+    position: relative;
+}
+
+.redes-sociais-imagens {
     display: inline;
-    max-width:32px;
-    max-height:32px;
+    max-width: 32px;
+    max-height: 32px;
     width: auto;
     height: auto;
     padding: 1rem;
 }
 
-.redes-sociais-icons{
+.redes-sociais-imagens:hover {
+    opacity: 0.3;
+    cursor: pointer
+}
+
+.redes-sociais-icons {
     text-align: center;
 }
 
-.rodape{
+.rodape {
     background: white;
     margin: 8rem;
     margin-top: 0;
     color: var(--cor-texto);
     text-align: center;
     padding: 2rem;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
 
 }

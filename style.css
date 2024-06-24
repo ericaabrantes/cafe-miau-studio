@@ -21,11 +21,22 @@ body {
     width: 80%;
     margin-left: 10%;
 }
-header {
+
+header{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: whitesmoke;
+    /* background-color:  rgba(23, 23, 23, .4); */
+}
+/* header {
     background: white;
     margin: 8rem;
     margin-bottom: 0;
-}
+} */
 
 .cor{
     color: var(--cor-primaria);
@@ -33,12 +44,45 @@ header {
 
 .cabecalho__banner {
     width: 70%;
-    margin-left:15%;
+    margin-left:7%;
     position: relative;
+    background-color: white;
     
 }
+.menu-hamburger{
+    width: 95%;
 
-.menu {
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-primaria);
+}
+
+.menu-hamburguer-elements{
+    display: flex;
+    width: 80%;
+    height: 5vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-hamburguer-elements li{
+    list-style: none;
+    font-size: 1.4rem;
+    margin: 2rem 0;
+    font-size: 1.4rem;
+    list-style: none;
+}
+
+.menu-hamburguer-elements a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.menu-hamburguer-elements a:hover{
+    color: #fcc6dd;
+}
+
+/* .menu-hamburguer {
     background: var(--cor-primaria);
     line-height: 3rem;
     display: flex;
@@ -66,23 +110,123 @@ header {
 
 .menu_link:hover{
     color: #fcc6dd;
+} */
+
+/* BOTÃO MENU HAMBURGUER */
+.menu {
+    background-color: var(--cor-primaria);
+    width: 60px;
+    height: 60px;
+    margin: 1rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+  
+.hamburguer {
+    position: relative;
+    display: block;
+    background: #fff;
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    left: 15px;
+    transition: 0.5s ease-in-out;
+}
+  
+.hamburguer:before,
+.hamburguer:after {
+    background: #ffff;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+}
+  
+.hamburguer:before {
+    top: -10px;
+}
+  
+.hamburguer:after {
+    bottom: -10px;
+}
+  
+input {
+    display: none;
 }
 
-/* menu em celular */
+/* rotação dos elementos do span */
+input:checked ~ label .hamburguer {
+    transform: rotate(45deg);
+}
 
-/* @media(max-width: 600px) {
-    .menu {
-        background: var(--cor-primaria);
+input:checked ~ label .hamburguer:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+  
+input:checked ~ label .hamburguer:after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+input:checked ~ .menu-hamburguer-elements{
+    left: 0;
+}
+
+/* ATIVANDO O BOTÃO HAMBURGUER QUANDO O TAMANHO DA TELA ATINGIR 600PX */
+@media (max-width: 735px){
+    
+    /* header{
+        height: 20%;
+    } */
+
+    .menu-hamburguer-elements a:hover{
+        color: #fcc6dd;
+    }
+    
+    .menu-hamburger{
+        margin: 16px;
+        order: -1;
         display: flex;
+        width: 15%;
+        flex-direction: column;
+        align-self: flex-start;
+        overflow: auto;
+        z-index: 1;
+        color: white
     }
 
-    .menu_link {
-        color: aliceblue;
-        text-decoration: none;
-        font-size: 1.5rem;
-
+    .menu-hamburguer-elements{
+        width: 60%;
+        height: 100%;
+        background-color: var(--cor-primaria);
+        position: fixed;
+        left: -60%;
+        top: 0;
+    
+        transition: left cubic-bezier(1,0,0,1) .8s;
+        
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    
+        padding-top: 15vh;
+    
+        z-index: -1;
     }
-} */
+
+    .menu{
+        display: flex;
+        height: 60px;
+        width: 60px;
+        
+    }
+
+}
 
 .about {
     background: white;
@@ -153,4 +297,65 @@ h6 {
     padding: 2rem;
     font-size: 0.8rem;
 
+}
+
+@media (max-width: 735px){
+
+    .cabecalho{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cabecalho+menu{
+        display: flex;
+        flex-direction: row;
+    }
+    .cabecalho__banner{
+        margin-left:0;
+        width: 70%;   
+    }
+
+    .about{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .about__imagem{
+       
+        margin-left: 2.5%;
+        width: 95%;
+        height: 95%;
+        /* margin-right: 10%; */
+       
+    }
+
+    .about__texto h6{
+        font-size: 1.5rem;
+        margin-top: 16px;
+        width: 95%;
+    }
+
+    .about__texto-paragrafo{
+        width: 95%;
+        font-size: 1rem;
+        padding: 16px;
+    }
+
+    .redes-sociais h6{
+        font-size: 1.5rem;
+        margin-top: 16px;
+        width: 500px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .redes-sociais-icons{
+        width: 500px;
+    }
+    .kirby{
+        margin-left: 2.5%;
+        width: 480px;
+
+    }
 }

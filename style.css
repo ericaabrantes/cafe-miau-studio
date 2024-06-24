@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 
-@import url('https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Fredoka One');
 
 :root {
     --cor-primaria: #ff80b5;
@@ -70,7 +70,7 @@ header {
 
 /* menu em celular */
 
-@media(max-width: 600px) {
+/* @media(max-width: 600px) {
     .menu {
         background: var(--cor-primaria);
         display: flex;
@@ -82,7 +82,7 @@ header {
         font-size: 1.5rem;
 
     }
-}
+} */
 
 .about {
     background: white;
@@ -112,9 +112,18 @@ h6 {
 .about__imagem{
     display: block;
     line-height: 0;
-    width: 420px;
-    height: auto;
+    width: 320px;
+    height: 320px;
     position: relative;
+}
+
+.redes-sociais{
+    width: 30%;
+}
+
+.kirby{
+    position: relative;
+    width: 320px;
 }
 
 .redes-sociais-imagens {

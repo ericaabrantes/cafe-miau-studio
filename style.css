@@ -20,6 +20,7 @@ body {
     background: white;
     width: 80%;
     margin-left: 10%;
+    margin-top: 5rem;
 }
 
 header{
@@ -230,7 +231,7 @@ input:checked ~ .menu-hamburguer-elements{
 
 .about {
     background: white;
-    margin: 8rem;
+    margin: 1rem;
     margin-top: 0;
     margin-bottom: 0;
     padding: 1rem;
@@ -300,6 +301,10 @@ h6 {
 }
 
 @media (max-width: 735px){
+
+    .inner{
+        margin-top: 0;
+    }
 
     .cabecalho{
         display: flex;

@@ -50,6 +50,10 @@ header{
     background-color: white;
     
 }
+
+.menu_link{
+    color: white;
+}
 .menu-hamburger{
     width: 95%;
 
@@ -353,14 +357,63 @@ h6 {
         width: 500px;
         align-items: center;
         text-align: center;
+        margin-left: 100px;
     }
 
     .redes-sociais-icons{
         width: 500px;
+        margin-left: 0;
     }
     .kirby{
-        margin-left: 2.5%;
-        width: 480px;
+        margin-left: 0px;
+        width: 250px;
 
+
+    }
+
+}
+
+/* (min-width: 736px) and */
+@media ( max-width: 1300px){
+    .about{
+        display: block;
+    }
+
+
+    .about__imagem{
+        margin-left: 10%;
+        width: 80%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .redes-sociais{
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .redes-sociais-icons{
+        display: flex;
+        margin-left: 110%;
+    }
+
+    .container__kirby{
+        display: flex;
+    }
+    .kirby{
+        width: 200%;
+        align-items: center;
+        justify-content: center;
+        margin-left: 60%;
+        /* margin-left: 250px; */
+    }
+
+    .redes-sociais h6{
+        margin-left: 60%;
+        font-size: 1.5rem;
+        margin-top: 16px;
+        width: 200%;
+        align-items: center;
+        text-align: center;
     }
 }

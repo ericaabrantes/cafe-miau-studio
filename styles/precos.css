@@ -271,7 +271,7 @@ h6 {
 }
 
 .overlay-design__imagem {
-    width: 90%;
+    width: 95%;
     margin: 1rem;
     /* height: auto; */
     object-fit: cover;
@@ -280,6 +280,9 @@ h6 {
 .overlays-design__texto {
     font-size: 1.8rem;
     color: var(--cor-texto);
+    text-align: left;
+    text-justify:distribute;
+    text-wrap: wrap;
 }
 
 .overlays-design__cards {
@@ -325,7 +328,7 @@ h3 {
 } */
 
 .cenario__imagem{
-    width: 90%;
+    width: 80%;
     margin: 1rem;
     /* height: auto; */
     object-fit: cover;
@@ -387,7 +390,7 @@ h3 {
 }
 
 .ilustracao__imagem {
-    width: 100%;
+    width: 90%;
     height: auto;
     object-fit: cover;
     object-position: bottom;
@@ -453,3 +456,28 @@ h3 {
         margin-left:0;
         width: 70%;   
     }
+
+}    
+
+@media (max-width: 850px){
+    .cenario__imagem{
+        width: 75%;
+    }
+
+    .ilustracoes__section {
+        display: block;
+    }
+    .ilustracao__imagem{
+        width: 100%;
+    }
+
+    .emotes-animados{
+        display: block;
+    }
+    .emotes__section{
+        display: block;
+    }
+    .emotes__imagens-container-imagem{
+        width: 100%;
+    }
+}

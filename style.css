@@ -358,17 +358,17 @@ h6 {
     .redes-sociais h6 {
         font-size: 1.5rem;
         margin-top: 16px;
-        width: 300px;
+        width: 250px;
         align-items: center;
         text-align: center;
         /* margin-left: 100px; */
     }
 
     .redes-sociais-icons {
-        width: 300px;
+        width: 250px;
         margin-left: 0;
         margin-left: 10%;
-                align-items: center;
+        align-items: center;
         text-align: center;
     }
 
@@ -377,7 +377,7 @@ h6 {
         width: 250px;
     } */
 
-    
+
     .container__kirby {
         display: flex;
     }
@@ -393,9 +393,11 @@ h6 {
     .menu-hamburger {
         overflow: unset;
     }
+
     .menu {
         margin: 0 0;
     }
+
     /* .redes-sociais-icons {
         display: flex;
         margin-left: 10%;
@@ -421,7 +423,8 @@ h6 {
         height: auto;
         margin-bottom: 1rem;
     }
-/* 
+
+    /* 
     .redes-sociais {
         width: 100%;
     } */
@@ -463,7 +466,7 @@ h6 {
 
 @media (max-width: 320px) {
 
-    header{
+    header {
         flex-direction: row;
         width: 95%;
     }
@@ -484,9 +487,9 @@ h6 {
 
     }
 
-    .about__texto-paragrafo{
+    .about__texto-paragrafo {
         font-size: 0.8rem;
-        padding:0;
+        padding: 0;
         padding-top: 4px;
     }
 

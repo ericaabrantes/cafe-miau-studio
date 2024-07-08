@@ -437,27 +437,7 @@ h3 {
 }
 
 
-@media (max-width: 735px){
-
-    .inner{
-        margin-top: 0;
-    }
-
-    .cabecalho{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .cabecalho+menu{
-        display: flex;
-        flex-direction: row;
-    }
-    .cabecalho__banner{
-        margin-left:0;
-        width: 70%;   
-    }
-
-}    
+ 
 
 @media (max-width: 850px){
     .cenario__imagem{
@@ -481,3 +461,192 @@ h3 {
         width: 100%;
     }
 }
+
+@media ( max-width: 320px){
+
+    
+    header{
+        flex-direction: row;
+        width: 95%;
+    }
+
+    h3{
+        font-size: 1rem;
+    }
+    .menu {
+        margin: 0 0;
+
+    }
+
+    .menu-hamburger {
+        overflow: unset;
+    }
+
+    .redes-sociais-icons {
+        display: flex;
+        margin-left: 10%;
+    }
+
+    .rodape {
+        margin: 0;
+        padding: 1rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+
+    h6 {
+        font-size: 1.2rem;
+    }
+
+    .overlays-design{
+        margin: 0;
+    }
+
+    .overlays-design__tier{
+        padding: 0;
+    }
+
+    .overlay-design__imagem{
+        margin: 10px;
+    }
+
+
+    .overlays-design__cards{
+        padding: 0px;
+    }
+
+    .overlays-design__cards li{
+        font-size: 1rem;
+    }
+
+    .overlays-design__cards p{
+        font-size: 1rem;
+    }
+
+    .cenario{
+        margin: 0;
+        margin-bottom: 16px;
+    }
+    .cenario__imagem{
+        margin: 0;
+    }
+
+    .emotes__section{
+        padding: 0;
+    }
+    .emotes__cards li{
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .ilustracoes__section{
+        padding: 0;
+    }
+    .ilustracoes__cards li{
+        font-size: 1rem;
+        padding: 5px;
+    }
+}
+
+@media ( min-width: 320px) and (max-width: 735px){
+
+    .inner{
+        margin-top: 0;
+    }
+
+    .cabecalho{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cabecalho+menu{
+        display: flex;
+        flex-direction: row;
+    }
+    .cabecalho__banner{
+        margin-left:0;
+        width: 70%;   
+    }
+
+    .menu {
+        margin: 0 0;
+
+    }
+
+    .menu-hamburger {
+        overflow: unset;
+    }
+
+    h6 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .emotes__section{
+        padding: 0;
+    }
+    .emotes__cards li{
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .ilustracoes__section{
+        padding: 0;
+    }
+    .ilustracoes__cards li{
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .overlays-design{
+        margin: 0;
+    }
+
+    .overlays-design__tier{
+        padding: 0;
+    }
+
+    .overlay-design__imagem{
+        margin: 10px;
+    }
+
+
+    .overlays-design__cards{
+        padding: 0px;
+    }
+
+    .overlays-design__cards li{
+        font-size: 1rem;
+    }
+
+    .overlays-design__cards p{
+        font-size: 1rem;
+    }
+
+    .emotes-animados{
+        margin: 4px;
+    }
+
+    .emotes-animados__items{
+        width: 60px;
+        height: 60px;
+        margin: 4px;
+    }
+
+    .cenario{
+        margin-right: 10%;
+        margin-bottom: 16px;
+    }
+    .cenario__imagem{
+        margin: 0;
+    }
+
+}   
